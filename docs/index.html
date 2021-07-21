@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="1" />
     <title>Tatum's Word Value Game</title>
-    <link rel="stylesheet" type="text/css" href="/style.5e1b06c3.css">
+    <link rel="stylesheet" type="text/css" href="./docs/style.2f3380ab.css" />
   </head>
   <body>
     <div id="wrapper">
       <h1>Tatum's Word Value Game</h1>
 
       <form id="gameForm">
-        <label>Give me a word</label>
-        <input type="text" name="word">
+        <div>
+          <label>Give me a word</label>
+          <input type="text" name="word" />
+        </div>
         <button type="submit">Calculate value</button>
       </form>
 
       <div>
         <ul id="results"></ul>
       </div>
+
+      <form id="lookupForm">
+        <div>
+          <label>Score</label>
+          <input type="number" name="score" />
+        </div>
+        <div>
+          <label>Wordlist</label>
+          <textarea name="wordList"></textarea>
+        </div>
+
+        <div id="searchResult"></div>
+
+        <button type="submit">Find word</button>
+      </form>
     </div>
-    <script src="/src.0186bf11.js"></script>
+    <script src="./docs/src.ba8374b1.js"></script>
   </body>
 </html>

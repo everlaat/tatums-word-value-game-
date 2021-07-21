@@ -13,14 +13,31 @@
       <h1>Tatum's Word Value Game</h1>
 
       <form id="gameForm">
-        <label>Give me a word</label>
-        <input type="text" name="word" />
+        <div>
+          <label>Give me a word</label>
+          <input type="text" name="word" />
+        </div>
         <button type="submit">Calculate value</button>
       </form>
 
       <div>
         <ul id="results"></ul>
       </div>
+
+      <form id="lookupForm">
+        <div>
+          <label>Score</label>
+          <input type="number" name="score" />
+        </div>
+        <div>
+          <label>Wordlist</label>
+          <textarea name="wordList"></textarea>
+        </div>
+
+        <div id="searchResult"></div>
+
+        <button type="submit">Find word</button>
+      </form>
     </div>
     <script src="./src/index.ts"></script>
   </body>

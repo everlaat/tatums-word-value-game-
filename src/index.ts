@@ -50,3 +50,25 @@ document.getElementById("gameForm").addEventListener("submit", (event) => {
   const resultContainer = document.getElementById("results");
   resultContainer.insertBefore(result, resultContainer.firstChild);
 });
+
+document.getElementById("lookupForm").addEventListener("submit", (event) => {
+  event.preventDefault();
+  const $query = document.querySelector('[name="score"]') as HTMLInputElement;
+  const $input = document.querySelector(
+    '[name="wordList"]'
+  ) as HTMLTextAreaElement;
+
+  const query = parseInt($query.value, 10) || 0;
+  const words = ($input.value || "").split("\n").map((a) => a.trim());
+
+  let result = "did not find anything :(";
+  for (let i = 0; i < words.length; i++) {
+    const value = calculateWordValue(words[i]);
+    if (value === query) {
+      result = words[i];
+      continue;
+    }
+  }
+
+  document.getElementById("searchResult").innerText = result;
+});
