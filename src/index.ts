@@ -61,14 +61,14 @@ document.getElementById("lookupForm").addEventListener("submit", (event) => {
   const query = parseInt($query.value, 10) || 0;
   const words = ($input.value || "").split("\n").map((a) => a.trim());
 
-  let result = "did not find anything :(";
+  let result = "";
   for (let i = 0; i < words.length; i++) {
     const value = calculateWordValue(words[i]);
     if (value === query) {
-      result = words[i];
-      continue;
+      result += " " + words[i];
     }
   }
 
-  document.getElementById("searchResult").innerText = result;
+  document.getElementById("searchResult").innerText =
+    result || "could not find anything :(";
 });
