@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="1" />
+    <title>Tatum's Word Value Game</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(240, 115, 201);
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      #wrapper {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Tatum's Word Value Game</h1>
+
+      <form id="gameForm">
+        <label>Give me a word</label>
+        <input type="text" name="word" />
+        <button type="submit">Calculate value</button>
+      </form>
+
+      <div>
+        <ul id="results"></ul>
+      </div>
+    </div>
+    <script src="./src/index.ts"></script>
+  </body>
+</html>
