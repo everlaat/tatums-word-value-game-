@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "parcel start index.html",
-    "build": "parcel build index.html --no-minify --out-dir ./docs"
+    "build": "rm -rf .cache docs && parcel build index.html --no-minify --out-dir ./docs --public-url ./"
   },
   "devDependencies": {
     "cssnano": "^5.0.6",

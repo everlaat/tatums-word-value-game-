@@ -191,4 +191,4 @@ document.getElementById("lookupForm").addEventListener("submit", function (event
   document.getElementById("searchResult").innerText = result || "could not find anything :(";
 });
 },{}]},{},["B6dB"], null)
-//# sourceMappingURL=/src.ed36286a.js.map
+//# sourceMappingURL=src.ed36286a.js.map
