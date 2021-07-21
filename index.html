@@ -25,12 +25,33 @@
       </div>
 
       <form id="lookupForm">
+        <h2>Word finder</h2>
+        <p>
+          Give me a "Target Score" to look for and a "Wordlist" (one word per
+          line) to search through.
+        </p>
+        <p>
+          Here is an
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/everlaat/tatums-word-value-game-/master/words-en.txt"
+            >english</a
+          >
+          and a
+          <a
+            target="_blank"
+            href="https://raw.githubusercontent.com/everlaat/tatums-word-value-game-/master/words-nl.txt"
+            >dutch</a
+          >
+          word list.
+        </p>
         <div>
-          <label>Score</label>
+          <label>Target Score</label>
           <input type="number" name="score" />
         </div>
         <div>
           <label>Wordlist</label>
+          <div></div>
           <textarea name="wordList"></textarea>
         </div>
 
